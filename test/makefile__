@@ -1,0 +1,14 @@
+.PHONY: phony
+phony:
+	echo phony
+
+real:: phony
+	echo real
+
+targ: real
+	touch real
+	toubh targ
+
+clean:
+	rm -f targ real
+	rm -f targ real
